@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #3d5af1;
+  --secondary-color: #22d1ee;
+  --tertiary-color: #0e153a;
+  --overlay: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none !important;
+  color: var(--tertiary-color);
+}
+
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+#header {
+  background-image: var(--overlay), url("img/pic1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 20px;
+  color: #fff;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+#header h1 {
+  font-size: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header p {
+  font-size: 20px;
+}
+
+#header .header-btn {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#header .header-btn:hover {
+  background: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+}
+
+#service h2 {
+  text-align: center;
+  padding-top: 70px;
+}
+
+#service h2::after {
+  content: "";
+  background: var(--primary-color);
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 50px;
+}
+
+#service p {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+#service .col-md-3:hover {
+  background: var(--primary-color);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.icon img {
+  height: 150px;
+  width: auto;
+  margin: auto;
+  padding: 18px;
+}
+
+#about {
+  margin-top: 30px;
+}
+
+#about img {
+  width: 100%;
+}
+
+#get-in-touch {
+  padding-top: 70px;
+}
+
+#get-in-touch h2::after {
+  content: "";
+  background: var(--primary-color);
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 50px;
+}
+
+#touch-form {
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+}
+
+#contact-address .fas {
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+#contact-address a {
+  color: #fff;
+}
+#contact-address span {
+  font-size: 14px;
+  color: #fff;
+}
+#contact-address .col-sm-12 {
+  background: var(--primary-color);
+}
+#contact-address .col-sm-12:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background: var(--tertiary-color);
+}
+#contact-social {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+#contact-social a:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#footer {
+  min-height: 120px;
+  padding-top: 50px;
+  margin-top: 70px;
+  background: var(--tertiary-color);
+  color: #fff;
+}
+#footer a {
+  color: var(--secondary-color);
 }
