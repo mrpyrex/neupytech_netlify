@@ -174,3 +174,45 @@ nav img {
 #footer a {
   color: var(--secondary-color);
 }
+@media screen and (max-width: 700px) {
+  .banner-text h1 {
+    font-size: 3.5rem;
+  }
+  .services .col-md-3 {
+    margin: 0 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 4rem;
+    margin-left: 40px;
+  }
+
+  .banner-text p {
+    font-size: 12px;
+    margin: 20px;
+    padding: 0 40px;
+  }
+
+  .display-2 {
+    font-size: 3rem;
+  }
+
+  #touch-form {
+    margin: 0 10px 20px;
+  }
+
+  #get-in-touch {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  .form-inline .form-control {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header .content-box {
+    height: 50vh;
+  }
+}
