@@ -100,6 +100,15 @@ nav img {
   margin-top: 30px;
 }
 
+#about h2::after {
+  content: "";
+  background: var(--primary-color);
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 50px;
+}
+
 #about img {
   width: 100%;
 }
@@ -174,45 +183,49 @@ nav img {
 #footer a {
   color: var(--secondary-color);
 }
+
 @media screen and (max-width: 700px) {
-  .banner-text h1 {
-    font-size: 3.5rem;
+  #header h1 {
+    font-size: 70px;
   }
-  .services .col-md-3 {
+  #header p {
+    font-size: 15px;
+  }
+
+  #service .col-md-3 {
     margin: 0 20px;
   }
 
-  .banner-text h1 {
+  #about h2 {
     font-size: 4rem;
-    margin-left: 40px;
   }
 
-  .banner-text p {
-    font-size: 12px;
-    margin: 20px;
-    padding: 0 40px;
+  #about img {
+    display: none;
   }
 
-  .display-2 {
+  #get-in-touch {
+    padding-top: 40px;
+  }
+
+  #get-in-touch h2 {
     font-size: 3rem;
   }
 
   #touch-form {
-    margin: 0 10px 20px;
+    margin: 0 20px;
   }
 
-  #get-in-touch {
-    padding-top: 50px;
-  }
-}
-
-@media (min-width: 576px) {
-  .form-inline .form-control {
-    display: inline-block;
-    vertical-align: middle;
+  #contact-address {
+    margin-top: 30px;
   }
 
-  .header .content-box {
-    height: 50vh;
+  #contact-address span {
+    font-size: 10px;
+  }
+
+  #footer {
+    padding-top: 30px;
+    margin-top: 20px;
   }
 }

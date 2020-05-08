@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h2 className="display-2">About Us</h2>
+            <h2 className="display-2 text-center">About Us</h2>
             <p>
               We are about making every project a truely memorable experience as
               we don't just take your order and serve out a website or a mobile
