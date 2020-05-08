@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <section id="service">
       <div className="container">
-        <h2>Our Services</h2>
+        <h2 className="display-2">Our Services</h2>
         <div className="row">
           <div className="col-md-3 text-center">
             <div className="icon">
