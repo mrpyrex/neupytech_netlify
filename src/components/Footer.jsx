@@ -6,9 +6,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="back-to-top">
-          <a href="#">
-            <i className="fas fa-chevron-up"></i>
-          </a>
+          <i className="fas fa-chevron-up"></i>
         </div>
         <div className="footer-content text-center">
           <div className="row">
