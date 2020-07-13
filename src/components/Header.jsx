@@ -21,6 +21,11 @@ const Header = () => {
           </Link>
           <ul className={toggle ? "nav-list open" : "nav-list"}>
             <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/projects" className="nav-link">
                 Projects
               </Link>
@@ -34,12 +39,6 @@ const Header = () => {
               <Link to="/blog" className="nav-link">
                 Blog
               </Link>
-            </li>
-
-            <li className="nav-item">
-              <a href="" className="nav-link">
-                Hire Us
-              </a>
             </li>
           </ul>
         </nav>
