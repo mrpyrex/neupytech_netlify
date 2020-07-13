@@ -1,0 +1,58 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Footer = () => {
+  return (
+    <footer>
+      <div className="container">
+        <div className="back-to-top">
+          <a href="#">
+            <i className="fas fa-chevron-up"></i>
+          </a>
+        </div>
+        <div className="footer-content text-center">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="social-media">
+                <h4>Follow Along</h4>
+                <ul className="social-icons">
+                  <li>
+                    <i className="fab fa-twitter"></i>
+                  </li>
+                  <li>
+                    <i className="fab fa-facebook"></i>
+                  </li>
+                  <li>
+                    <i className="fab fa-instagram"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="newsletter-container">
+                <h4>Newsletter</h4>
+                <form action="" className="newsletter-form">
+                  <input
+                    type="text"
+                    className="newsletter-input"
+                    placeholder="Your email"
+                  />
+                  <button className="newsletter-btn">
+                    <i className="fas fa-envelope"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="text-center my-5">
+          {new Date().getFullYear()} &copy; Neupytech Digital Agency. All Rights
+          Reserved | <Link to="#">Privacy Policy</Link> |{" "}
+          <Link to="#">Terms</Link> | <Link to="#">Support</Link>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

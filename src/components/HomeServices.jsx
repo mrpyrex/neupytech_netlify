@@ -1,16 +1,18 @@
 import React from "react";
-import bullhorn from "../img/bullhorn.svg";
-import email from "../img/email.svg";
-import mobiledev from "../img/mobiledev.svg";
 import webdev from "../img/webdev.svg";
+import bullhorn from "../img/bullhorn.svg";
+import mobiledev from "../img/mobiledev.svg";
+import email from "../img/email.svg";
 
-const Service = () => {
+const HomeServices = () => {
   return (
-    <section id="service">
-      <div className="container">
-        <h2 className="display-2">Our Services</h2>
+    <section className="home-services">
+      <div className="container text-center">
+        <div className="global-headline">
+          <h2 className="sub-headline">Our Services</h2>
+        </div>
         <div className="row">
-          <div className="col-md-3 text-center">
+          <div className="col-md-3">
             <div className="icon">
               <img src={webdev} alt="" />
             </div>
@@ -22,7 +24,7 @@ const Service = () => {
               maintenance.
             </p>
           </div>
-          <div className="col-md-3 text-center">
+          <div className="col-md-3">
             <div className="icon">
               <img src={mobiledev} alt="" />
             </div>
@@ -32,7 +34,7 @@ const Service = () => {
               that run and perfom swiftly on both Android and IOS devices.
             </p>
           </div>
-          <div className="col-md-3 text-center">
+          <div className="col-md-3">
             <div className="icon">
               <img src={email} alt="" />
             </div>
@@ -43,7 +45,7 @@ const Service = () => {
               through various digital channels.
             </p>
           </div>
-          <div className="col-md-3 text-center">
+          <div className="col-md-3">
             <div className="icon">
               <img src={bullhorn} alt="" />
             </div>
@@ -60,4 +62,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default HomeServices;
