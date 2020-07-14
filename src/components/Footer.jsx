@@ -31,15 +31,17 @@ const Footer = () => {
                 <h4>Newsletter</h4>
                 <form
                   name="newsletter"
-                  method="POST"
-                  data-netlify="true"
+                  method="post"
                   className="newsletter-form"
                 >
+                  <input type="hidden" name="form-name" value="newsletter" />
                   <input
-                    type="text"
+                    type="email"
                     className="newsletter-input"
                     placeholder="Your email"
+                    name="email"
                   />
+
                   <button className="newsletter-btn">
                     <i className="fas fa-envelope"></i>
                   </button>
