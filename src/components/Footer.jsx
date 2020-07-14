@@ -29,7 +29,12 @@ const Footer = () => {
             <div className="col-md-6">
               <div className="newsletter-container">
                 <h4>Newsletter</h4>
-                <form action="" className="newsletter-form">
+                <form
+                  name="newsletter"
+                  method="POST"
+                  data-netlify="true"
+                  className="newsletter-form"
+                >
                   <input
                     type="text"
                     className="newsletter-input"
