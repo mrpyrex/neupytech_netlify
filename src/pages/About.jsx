@@ -163,12 +163,7 @@ const About = () => {
                   </div>
 
                   <div class="card-body">
-                    <a href="#" class="card-link">
-                      Card link
-                    </a>
-                    <a href="#" class="card-link">
-                      Another link
-                    </a>
+                    {/* Add links for social accounts */}
                   </div>
                 </div>
               </div>
@@ -184,12 +179,7 @@ const About = () => {
                   </div>
 
                   <div class="card-body">
-                    <a href="#" class="card-link">
-                      Card link
-                    </a>
-                    <a href="#" class="card-link">
-                      Another link
-                    </a>
+                    {/* Add links for social accounts */}
                   </div>
                 </div>
               </div>
@@ -205,12 +195,7 @@ const About = () => {
                   </div>
 
                   <div class="card-body">
-                    <a href="#" class="card-link">
-                      Card link
-                    </a>
-                    <a href="#" class="card-link">
-                      Another link
-                    </a>
+                    {/* Add links for social accounts */}
                   </div>
                 </div>
               </div>
@@ -226,12 +211,7 @@ const About = () => {
                   </div>
 
                   <div class="card-body">
-                    <a href="#" class="card-link">
-                      Card link
-                    </a>
-                    <a href="#" class="card-link">
-                      Another link
-                    </a>
+                    {/* Add links for social accounts */}
                   </div>
                 </div>
               </div>
