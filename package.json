@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "^4.1.0",
     "animate.css-react": "^1.0.0",
+    "aos": "^3.0.0-beta.6",
     "apollo-boost": "^0.4.9",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-client": "^2.6.10",

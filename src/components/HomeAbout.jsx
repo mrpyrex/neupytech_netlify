@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 
 const HomeAbout = () => {
   return (
-    <section className="home-about">
+    <section
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      className="home-about"
+    >
       <div className="container">
         <div className="global-headline">
           <h2 className="sub-headline">About Us</h2>

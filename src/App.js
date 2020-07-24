@@ -1,5 +1,8 @@
-import React from "react";
-import "animate.css/animate.css";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -11,6 +14,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 400,
+      duration: 2000,
+    });
+  }, []);
   return (
     <BrowserRouter>
       <Header />

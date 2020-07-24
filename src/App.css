@@ -88,7 +88,8 @@ header {
   z-index: 1500;
 }
 
-.menu-toggle .fa-bars {
+.menu-toggle .fa-bars,
+.fa-times {
   color: var(--primary-color);
 }
 
@@ -320,6 +321,13 @@ header {
 
 .difference-content img {
   width: 13rem;
+}
+
+/* About Page */
+
+#team .card {
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 /* Contact Page */

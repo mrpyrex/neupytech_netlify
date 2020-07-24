@@ -8,7 +8,7 @@ import { createHttpLink } from "apollo-link-http";
 import { ApolloProvider } from "@apollo/react-hooks";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:8000/graphql/",
+  uri: "https://pure-earth-70146.herokuapp.com/graphql/",
 });
 
 const client = new ApolloClient({

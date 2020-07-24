@@ -6,7 +6,7 @@ import email from "../img/email.svg";
 
 const HomeServices = () => {
   return (
-    <section className="home-services">
+    <section data-aos="slide-left" className="home-services">
       <div className="container text-center">
         <div className="global-headline">
           <h2 className="sub-headline">Our Services</h2>
