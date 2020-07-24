@@ -10,7 +10,7 @@ const Contact = () => {
   const [enquiry, setEnquiry] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
-  const [submitting, setSubmitting] = useState(false);
+  // const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = (event, createContact) => {
     event.preventDefault();
@@ -142,11 +142,7 @@ const Contact = () => {
                       ></textarea>
                     </div>
 
-                    <button
-                      disabled={submitting}
-                      type="submit"
-                      className="btn btn-primary"
-                    >
+                    <button type="submit" className="btn btn-primary">
                       <i className="fab fa-telegram-plane mr-2"></i>Send Enquiry
                     </button>
                   </form>

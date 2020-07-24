@@ -18,9 +18,8 @@ const HomeAbout = () => {
             <p>
               We are about making every project a truely memorable experience as
               we don't just take your order and serve out a website or a mobile
-              app. At <a href="neupytech.com">neupytech</a> we ensure that we
-              get to know what you are all about and tailor your app to suit
-              your market and audience.
+              app. At neupytech we ensure that we get to know what you are all
+              about and tailor your app to suit your market and audience.
             </p>
             <Link to="/about" className="btn btn-body">
               Learn more
