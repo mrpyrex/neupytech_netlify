@@ -142,7 +142,18 @@ const Contact = () => {
                       ></textarea>
                     </div>
 
-                    <button type="submit" className="btn btn-primary">
+                    <button
+                      disabled={
+                        loading ||
+                        !firstName.trim() ||
+                        !lastName.trim() ||
+                        !email.trim() ||
+                        !phone.trim() ||
+                        !message.trim()
+                      }
+                      type="submit"
+                      className="btn btn-primary"
+                    >
                       <i className="fab fa-telegram-plane mr-2"></i>Send Enquiry
                     </button>
                   </form>
