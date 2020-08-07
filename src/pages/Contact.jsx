@@ -45,7 +45,6 @@ const Contact = () => {
                 setPhone("");
                 setEnquiry("");
                 setMessage("");
-                console.log(data);
               }}
             >
               {(createContact, { loading, error }) => {
