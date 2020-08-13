@@ -39,7 +39,7 @@ img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 p {
@@ -334,6 +334,10 @@ header {
 
 .contact-content {
   margin-top: 5rem;
+}
+
+#post-list {
+  margin-top: 4rem;
 }
 
 /* Footer */

@@ -32,3 +32,30 @@ export const CREATE_CONTACT_MUTATION = gql`
     }
   }
 `;
+
+export const CREATE_POST_MUTATION = gql`
+  mutation(
+    $title: String!
+    $content: String
+    $thumb: String!
+    $category: String!
+  ) {
+    createPost(
+      title: $title
+      content: $content
+      thumb: $thumb
+      category: $category
+    ) {
+      post {
+        id
+        title
+        content
+        thumb
+        createdAt
+        updatedAt
+        published
+        slug
+      }
+    }
+  }
+`;

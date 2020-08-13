@@ -12,6 +12,7 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PostDetails from "./components/PostDetails";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/contact" component={Contact} />
         <Route path="/projects" component={Projects} />
+        <Route exact path="/blog/:id/:slug" component={PostDetails} />
         <Route path="/blog" component={Blog} />
         <Route path="/about" component={About} />
       </Switch>
