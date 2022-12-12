@@ -1,5 +1,4 @@
 import React from "react";
-import { Query } from "react-apollo";
 import { GET_POSTDETAIL_QUERY } from "../graphql/query";
 
 const PostDetails = ({ match }) => {
@@ -9,7 +8,7 @@ const PostDetails = ({ match }) => {
     <section>
       <div className="container">
         <div className="row">
-          <Query query={GET_POSTDETAIL_QUERY} variables={{ id, slug }}>
+          {/* <Query query={GET_POSTDETAIL_QUERY} variables={{ id, slug }}>
             {({ data, loading, error }) => {
               if (loading) return <h4>loading...</h4>;
               if (error) return <h4>error!</h4>;
@@ -20,7 +19,7 @@ const PostDetails = ({ match }) => {
                 </div>
               );
             }}
-          </Query>
+          </Query> */}
         </div>
       </div>
     </section>

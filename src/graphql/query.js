@@ -1,4 +1,4 @@
-import { gql } from "apollo-boost";
+import { gql } from "@apollo/client";
 
 export const GET_POSTS_QUERY = gql`
   query PostsQuery {
@@ -19,6 +19,29 @@ export const GET_POSTS_QUERY = gql`
         firstName
         lastName
       }
+    }
+  }
+`;
+
+export const GET_PROJECTS_QUERY = gql`
+  query PeojectsQuery {
+    projects {
+      id
+      title
+      description
+      projectUrl
+      projectImage
+      projectstackSet {
+        id
+        name
+        stackLogo
+      }
+      category {
+        id
+        name
+      }
+      createdAt
+      updatedAt
     }
   }
 `;

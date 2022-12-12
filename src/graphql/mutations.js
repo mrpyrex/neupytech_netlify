@@ -1,7 +1,7 @@
-import { gql } from "apollo-boost";
+import { gql } from "@apollo/client";
 
 export const CREATE_CONTACT_MUTATION = gql`
-  mutation(
+  mutation (
     $company: String
     $email: String
     $enquiry: String
@@ -34,7 +34,7 @@ export const CREATE_CONTACT_MUTATION = gql`
 `;
 
 export const CREATE_POST_MUTATION = gql`
-  mutation(
+  mutation (
     $title: String!
     $content: String
     $thumb: String!
