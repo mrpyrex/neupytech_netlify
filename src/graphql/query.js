@@ -31,6 +31,7 @@ export const GET_PROJECTS_QUERY = gql`
       description
       projectUrl
       projectImage
+      slug
       projectstackSet {
         id
         name
@@ -57,6 +58,30 @@ export const GET_POST_CATEGORY_QUERY = gql`
         id
         title
       }
+    }
+  }
+`;
+
+export const GET_PROJECT_DETAIL = gql`
+  query ProjectDetailQuery($slug: String!) {
+    project(slug: $slug) {
+      id
+      title
+      description
+      projectUrl
+      projectImage
+      slug
+      projectstackSet {
+        id
+        name
+        stackLogo
+      }
+      category {
+        id
+        name
+      }
+      createdAt
+      updatedAt
     }
   }
 `;
