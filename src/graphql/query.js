@@ -5,19 +5,37 @@ export const GET_POSTS_QUERY = gql`
     posts {
       id
       title
-      thumb
-      createdAt
-      content
       slug
+      content
       category {
         id
-        catTitle
+        name
+        slug
       }
+      postImage
       author {
         id
-        username
-        firstName
         lastName
+        firstName
+      }
+      createdAt
+      updatedAt
+      likes {
+        id
+        user {
+          id
+          lastName
+          firstName
+        }
+      }
+      comments {
+        id
+        content
+        user {
+          id
+          lastName
+          firstName
+        }
       }
     }
   }
