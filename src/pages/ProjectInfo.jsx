@@ -24,7 +24,9 @@ const ProjectInfo = (props) => {
             <h4>Description</h4>
             <p>{data.project.description}</p>
             <hr />
-            <h4>Industry: </h4>
+            <h4>Client: {data.project.client}</h4>
+            <hr />
+            <h4>Industry: {data.project.industry}</h4>
             {/* <hr />
               <h4>Stacks: </h4> */}
             <hr />

@@ -71,6 +71,8 @@ export const GET_PROJECT_DETAIL = gql`
       projectUrl
       projectImage
       slug
+      client
+      industry
       projectstackSet {
         id
         name
