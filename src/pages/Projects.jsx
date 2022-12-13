@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectList from "../components/ProjectList";
-import { useQuery } from "@apollo/client";
 
 const Projects = () => {
   return (

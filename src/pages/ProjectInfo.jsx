@@ -32,7 +32,11 @@ const ProjectInfo = (props) => {
             <hr />
             <h4>
               URL:
-              <a target="_blank" href={data.project.projectUrl}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={data.project.projectUrl}
+              >
                 {data.project.projectUrl}
               </a>
             </h4>
